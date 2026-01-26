@@ -1,4 +1,3 @@
--- V23 Full Path (476 acts) - 20260126_181540
 local cam=workspace.CurrentCamera plr=game.Players.LocalPlayer char=plr.Character or plr.CharacterAdded:Wait() local hum=char:WaitForChild('Humanoid',5) hrp=char:WaitForChild('HumanoidRootPart',5) if not(hum and hrp)then return end hum.AutoRotate=false cam.CameraType=Enum.CameraType.Scriptable task.wait(1.5)
 
 cam.CFrame=CFrame.new(41.481,249.382,-328.028,-0.978471,0.043916,-0.201658,0.000000,0.977099,0.212786,0.206384,0.208205,-0.956063) cam.FieldOfView=70.00 hum:Move(Vector3.zero,true) hrp.AssemblyLinearVelocity=Vector3.new(0.000,0.001,0.000) hrp.CFrame=CFrame.new(44.001,245.222,-316.078) local lookDir=cam.CFrame.LookVector*Vector3.new(1,0,1) if lookDir.Magnitude>0.01 then hrp.CFrame=CFrame.new(hrp.Position,hrp.Position+lookDir.Unit) end task.wait(0.0000)
